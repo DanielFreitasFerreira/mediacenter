@@ -1,0 +1,49 @@
+header {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 990px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.descricao-logo {
+  color: var(--color-logo-span);
+  font-size: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 10px;
+}
+
+
+/*Estilizar menu de navegação*/
+.menu {
+  display: flex;
+  align-items: center;
+}
+nav ul,
+nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  display: flex;
+}
+nav a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-ancora-nav);
+  font-family: Arial;
+}
+nav .active a,
+nav a:hover {
+  background-color: var(--color-ancora-hover);
+  color: var(--color-ancora-change-hover);
+}

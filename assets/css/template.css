@@ -1,0 +1,223 @@
+/* Estilo sessão site */
+#banner {
+  display: flex;
+  justify-content: center;
+  background-image: url('../images/liberdade.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 670px;
+}
+
+.column {
+  flex-direction: column;
+}
+.banner-headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+.banner-headline h1 {
+  text-shadow: 0px 1px 0px #555;
+  color: var(--color-banner-textimport-one);
+  font-weight: 200;
+  font-size: 70px;
+  width: 430px;
+  max-width: 350px;
+}
+.banner-headline strong {
+  font-weight: 700;
+}
+.banner-headline h2 {
+  text-shadow: 0px 1px 0px #555;
+  color: var(--color-banner-textimport-one);
+  font-weight: 200;
+  font-size: 22px;
+  max-width: 350px;
+  margin-top: 30px;
+}
+.banner-options {
+  display: flex;
+  height: 210px;
+}
+.banner1,
+.banner2,
+.banner3 {
+  flex: 1;
+  color: var(--color-text-banner-options);
+  padding: 20px;
+}
+.banner1 {
+  background-color: var(--color-banner-options-banner-one);
+}
+.banner2 {
+  background-color: var(--color-banner-options-banner-two);
+}
+.banner3 {
+  background-color: var(--color-banner-options-banner-tree);
+}
+.banner-title {
+  font-size: 21px;
+}
+.banner-description {
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.banner-options a {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 5px;
+  color: var(--color-ancora-button);
+  font-size: 12px;
+  text-decoration: none;
+}
+#geral {
+  display: flex;
+  justify-content: center;
+}
+#geral section {
+  flex: 2;
+}
+#geral aside {
+  flex: 1;
+}
+.widget-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.widget-title-text {
+  color: var(--color-widget-title-text);
+  font-size: 21px;
+  font-weight: bold;
+}
+.widget-title-bar {
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-widget-title-bar);
+  margin-top: 10px;
+}
+
+/* Artigos da página */
+article {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 30px;
+}
+article a {
+  text-decoration: none;
+}
+article .news-data {
+  display: flex;
+}
+article .news-posted-at {
+  background-color: var(--color-news-posted-at);
+  color: var(--color-text-news-posted-at);
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Ubuntu';
+  padding: 10px;
+  margin-right: 2px;
+}
+article .news-comments {
+  background-color: var(--color-news-comments);
+  color: var(--color-text-news-posted-at);
+  font-size: 12px;
+  padding: 10px;
+}
+article .news-thumbnail {
+  margin-top: 30px;
+}
+article .news-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+article .news-title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: var(--color-text-news-title);
+  font-size: 23px;
+}
+article .news-resume {
+  color: var(--color-text-news-resume);
+  line-height: 22px;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilizando footer - rodapé */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-background-footer);
+}
+.footer-menu {
+  display: flex;
+}
+.banner-footer-one,
+.banner-footer-two,
+.banner-footer-three{
+  flex: 1;
+  color: var(--color-text-banner-footer);
+  padding: 20px 17px 15px;
+}
+.banner-footer-one {
+  background-color: var(--color-banner-footer-one);
+  padding: 26px 23px;
+}
+.banner-footer-two {
+  background-color: var(--color-banner-footer-two);
+}
+.banner-footer-three {
+  background-color: var(--color-banner-footer-three);
+}
+.footer-menu a {
+  display: block;
+  text-decoration: none;
+  color: var(--banner-footer-three-text);
+}
+.banner-footer-box {
+  padding: 26px 23px;
+}
+.footer-area {
+  display: flex;
+}
+.footer-area-item {
+  flex: 1;
+  color: var(--color-banner-footer-area);
+}
+.flexcolumn {
+  flex-direction: column;
+}
+.widget-title-text {
+  margin-top: 50px;
+  color: var(--color-widget-title-text);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.widget-body {
+  margin-top: 30px;
+  line-height: 23px;
+}
+.copy-area {
+  background-color: var(--color-background-copy-area);
+  height: 74px;
+}
+.copy-area .footer-copy-text {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+}
+
+footer .widget-title-text {
+  color: var(--color-widget-title-text);
+}
+.footer-copy-text {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: var(--color-footer-copy-div);
+}
