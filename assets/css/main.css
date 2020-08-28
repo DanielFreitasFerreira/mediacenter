@@ -4,6 +4,8 @@
   --color-ancora-hover: #42b3e5;
   --color-ancora-change-hover: #ffffff;
   --color-banner-textimport-one: #f7f7f7;
+  --color-banner-options-houver: #fff;
+  --color-banner-options-ancora-text: #42bae5;
   --color-banner-options-banner-one: #42b3e5;
   --color-banner-options-banner-two: #0384ce;
   --color-banner-options-banner-tree: #3156a3;
@@ -26,6 +28,7 @@
   --color-widget-title-text: #b5c0c5;
   --color-footer-copy-div: #fff;
   --color-background-copy-area: #151515;
+  --color-mm-line: #3156a3;
 }
 * {
   font-family: "Source sans serif";

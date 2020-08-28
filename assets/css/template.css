@@ -2,7 +2,7 @@
 #banner {
   display: flex;
   justify-content: center;
-  background-image: url('../images/liberdade.jpg');
+  background-image: url("../images/liberdade.jpg");
   background-position: center;
   background-size: cover;
   height: 670px;
@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 25px;
   flex: 1;
 }
 .banner-headline h1 {
@@ -67,10 +68,20 @@
 .banner-options a {
   display: inline-block;
   border: 1px solid #fff;
-  padding: 5px;
+  padding: 12px 19px;
+  text-transform: uppercase;
   color: var(--color-ancora-button);
   font-size: 12px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   text-decoration: none;
+}
+.banner-options > .banner2 a {
+  margin-top: 15px;
+}
+.banner-options a:hover {
+  background-color: var(--color-banner-options-houver);
+  color: var(--color-banner-options-ancora-text);
+  transition: 0.5s;
 }
 #geral {
   display: flex;
@@ -115,7 +126,7 @@ article .news-posted-at {
   color: var(--color-text-news-posted-at);
   font-size: 12px;
   font-weight: bold;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   padding: 10px;
   margin-right: 2px;
 }
@@ -160,14 +171,12 @@ footer {
 }
 .banner-footer-one,
 .banner-footer-two,
-.banner-footer-three{
+.banner-footer-three {
   flex: 1;
   color: var(--color-text-banner-footer);
-  padding: 20px 17px 15px;
 }
 .banner-footer-one {
   background-color: var(--color-banner-footer-one);
-  padding: 26px 23px;
 }
 .banner-footer-two {
   background-color: var(--color-banner-footer-two);
@@ -179,9 +188,7 @@ footer {
   display: block;
   text-decoration: none;
   color: var(--banner-footer-three-text);
-}
-.banner-footer-box {
-  padding: 26px 23px;
+  padding: 20px;
 }
 .footer-area {
   display: flex;
@@ -196,7 +203,7 @@ footer {
 .widget-title-text {
   margin-top: 50px;
   color: var(--color-widget-title-text);
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .widget-body {
   margin-top: 30px;
@@ -220,4 +227,73 @@ footer .widget-title-text {
   line-height: 40px;
   font-size: 12px;
   color: var(--color-footer-copy-div);
+}
+.menu-mobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+/* Responsívidade para mobile */
+@media (max-width: 670px) {
+  .banner-headline {
+    padding: 25px;
+  }
+  .banner-headline h1 {
+    font-size: 50px;
+  }
+  .banner-headline h2 {
+    font-size: 18px;
+  }
+  .banner-options {
+    height: auto;
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: column;
+  }
+  #geral section,
+  #geral aside {
+    padding: 20px;
+  }
+  .footer-menu {
+    flex-direction: column;
+  }
+  .footer-area {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .copy-area,
+  .footer-copy-text {
+    padding-left: 20px;
+  }
+  header .container {
+    flex-direction: row;
+  }
+  nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  header {
+    height: auto;
+  }
+  .logo {
+    padding: 20px;
+  }
+  .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .mm-line {
+    height: 3px;
+    background-color: var(--color-mm-line);
+  }
 }
