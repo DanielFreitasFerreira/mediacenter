@@ -1,7 +1,33 @@
-header {
+.header-top {
+  background-color: var(--bg-header-top);
+  max-width: 100%;
+}
+.header-container {
+  display: flex;
+  max-width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 17px 0;
+}
+.header-list li {
+  display: inline-block;
+}
+.header-list li a {
+  padding: 0 20px 0 20px;
+  text-decoration: none;
+}
+.header {
   display: flex;
   justify-content: center;
   height: 120px;
+}
+.header-icon {
+  display: block;
+  color: #999;
+  font-size: 13px;
+}
+.template-location::before {
+  content: "\e081";
 }
 .container {
   display: flex;
