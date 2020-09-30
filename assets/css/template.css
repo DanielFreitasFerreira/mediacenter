@@ -48,6 +48,14 @@
   color: var(--color-text-banner-options);
   padding: 20px;
 }
+.banner-title {
+  font-size: 20px;
+}
+.banner3 .banner-description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 0.7em;
+}
 .banner1 {
   background-color: var(--color-banner-options-banner-one);
 }
@@ -58,7 +66,7 @@
   background-color: var(--color-banner-options-banner-tree);
 }
 .banner-title {
-  font-size: 21px;
+  font-size: 1.25em;
 }
 .banner-description {
   font-size: 12px;
@@ -72,7 +80,7 @@
   text-transform: uppercase;
   color: var(--color-ancora-button);
   font-size: 12px;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   text-decoration: none;
 }
 .banner-options > .banner2 a {
@@ -292,8 +300,45 @@ footer .widget-title-text {
     flex-direction: column;
     justify-content: space-around;
   }
-  .mm-line {
-    height: 3px;
-    background-color: var(--color-mm-line);
+  
+  #checkbox-menu {
+    position: absolute;
+    opacity: 0;
+  }
+  #checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  #checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+  #checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+  label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 40px;
+  }
+  label span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: var(--color-checkbox-menu);
+    transition: 0.25s ease-in-out;
+  }
+  label span:nth-child(1) {
+    top: 0;
+  }
+  label span:nth-child(2) {
+    top: 10px;
+  }
+  label span:nth-child(3) {
+    top: 20px;
   }
 }
